@@ -62,6 +62,8 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:co
 .avatar{border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;
   background:radial-gradient(circle at 30% 25%,#3b82f6,#1e3a8a 70%)}
 .nav-av.avatar{font-size:14px}
+.nav-av img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+img.hero-av{display:block;object-fit:cover;object-position:50% 20%}
 
 /* Hero */
 .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
@@ -198,7 +200,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
 
 <header>
   <nav class="wrap nav" aria-label="Primary">
-    <a href="#top" class="nav-av avatar" aria-label="Back to top">BP</a>
+    <a href="#top" class="nav-av avatar" aria-label="Back to top"><img src="photo.jpg" alt=""></a>
     <div class="nav-right">
       <ul id="menu">
         <li><a href="#skills">Skills</a></li>
@@ -222,7 +224,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
   <section class="hero">
     <canvas id="grid" aria-hidden="true"></canvas>
     <div class="wrap">
-      <div class="avatar hero-av" role="img" aria-label="Bhaswanth Pacha">BP</div>
+      <img class="avatar hero-av" src="photo.jpg" alt="Bhaswanth Pacha" width="220" height="220">
       <h1>Bhaswanth Pacha</h1>
       <p class="role"><span id="typed">SDET</span><span class="caret" aria-hidden="true"></span></p>
       <div class="loc">
